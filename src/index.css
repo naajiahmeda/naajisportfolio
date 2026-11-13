@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #050605;
+    --accent: #B7FF00;
+    --accent-subtle: #14200A;
+    --text-muted: #A1A1A1;
+    --font-heading: 'Bebas Neue', 'Anton', sans-serif;
+    --font-alt-heading: 'Syne', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'Space Grotesk', monospace;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #ffffff;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050605;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #14200a;
+    border-radius: 4px;
+    border: 1px solid rgba(183, 255, 0, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B7FF00;
+  }
+}
+
+.font-heading {
+  font-family: 'Bebas Neue', 'Anton', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-tech {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Background grid pattern matching reference image */
+.bg-cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(20, 32, 10, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 32, 10, 0.4) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-cyber-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(183, 255, 0, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(183, 255, 0, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle glow effects */
+.glow-accent {
+  box-shadow: 0 0 25px rgba(183, 255, 0, 0.25);
+}
+
+.glow-accent-strong {
+  box-shadow: 0 0 45px rgba(183, 255, 0, 0.45);
+}
+
+.glow-text {
+  text-shadow: 0 0 15px rgba(183, 255, 0, 0.4);
+}
+
+/* Radial ambient lighting */
+.ambient-glow-green {
+  background: radial-gradient(circle at 75% 45%, rgba(183, 255, 0, 0.12) 0%, rgba(20, 32, 10, 0.3) 35%, transparent 70%);
+}
+
+.ambient-glow-center {
+  background: radial-gradient(circle at 50% 50%, rgba(183, 255, 0, 0.08) 0%, rgba(5, 6, 5, 0.95) 75%);
+}
+
+/* Noise overlay */
+.noise-overlay {
+  background-image: radial-gradient(rgba(183, 255, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
