@@ -1,3 +1,5 @@
+'use client';
+
 import { ArrowUp, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { ArrowUpRight, Activity, Layers, ScanFace, Terminal } from 'lucide-react';
 import type { Project } from '../types';

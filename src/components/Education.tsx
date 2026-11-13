@@ -1,3 +1,5 @@
+'use client';
+
 import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 
 interface EducationItem {

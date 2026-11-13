@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #050605;
+    --accent: #B7FF00;
+    --accent-subtle: #14200A;
+    --text-muted: #A1A1A1;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #ffffff;
+    overflow-x: clip;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050605;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #14200a;
+    border-radius: 4px;
+    border: 1px solid rgba(183, 255, 0, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B7FF00;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-anton), 'Anton', 'Bebas Neue', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-anton {
+  font-family: var(--font-anton), 'Anton', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-tech {
+  font-family: var(--font-tech), 'Space Grotesk', monospace;
+}
+
+/* Background grid pattern matching reference image */
+.bg-cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(20, 32, 10, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 32, 10, 0.5) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.bg-cyber-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(183, 255, 0, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(183, 255, 0, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle glow effects */
+.glow-accent {
+  box-shadow: 0 0 25px rgba(183, 255, 0, 0.25);
+}
+
+.glow-accent-strong {
+  box-shadow: 0 0 45px rgba(183, 255, 0, 0.45);
+}
+
+.glow-text {
+  text-shadow: 0 0 15px rgba(183, 255, 0, 0.4);
+}

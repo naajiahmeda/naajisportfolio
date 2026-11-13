@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, type ElementType } from 'react';
 import {
   Gamepad2,

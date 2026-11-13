@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 import { X, ArrowUpRight, CheckCircle2, Cpu, Terminal } from 'lucide-react';
 import type { Project } from '../types';

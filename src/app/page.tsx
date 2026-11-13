@@ -1,16 +1,18 @@
-import { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
-import { Creative } from './components/Creative';
-import { Education } from './components/Education';
-import { Personality } from './components/Personality';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+'use client';
 
-export function App() {
+import { useState, useEffect } from 'react';
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { About } from '@/components/About';
+import { Skills } from '@/components/Skills';
+import { Projects } from '@/components/Projects';
+import { Creative } from '@/components/Creative';
+import { Education } from '@/components/Education';
+import { Personality } from '@/components/Personality';
+import { Contact } from '@/components/Contact';
+import { Footer } from '@/components/Footer';
+
+export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -73,5 +75,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;

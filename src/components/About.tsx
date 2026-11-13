@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Sparkles, Code2, Compass, Layers } from 'lucide-react';
 
